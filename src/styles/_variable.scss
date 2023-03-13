@@ -1,0 +1,16 @@
+$text-primary: #FFFFFF;
+$text-secondary: rgba(141, 26, 57, 1);
+$text-sub-secondary : rgba(234, 128, 33, 1);
+
+$border-primary:rgba(6, 86, 6, 1);
+$border-secondary: rgba(165, 16, 191, 1);
+$border-sub-secondary: rgba(112, 10, 10, 1);
+
+$z-indexes: (
+  behind: -1,
+  default: 1,
+  high: 10,
+  higher: 100,
+  highest: 1000,
+  highestest: 1001,
+);

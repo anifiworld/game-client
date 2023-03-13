@@ -1,0 +1,37 @@
+
+@mixin text-shadow($color, $size: small) {
+  @if $size == bold {
+    @include text-shadow-bold($color);
+  } @else if $size == medium {
+    @include text-shadow-medium($color);
+  } @else {
+    @include text-shadow-small($color);
+  }
+}
+
+@mixin text-shadow-small($color) {
+  text-shadow: -1px -1px 0px $color, 0px -1px 0px $color, 1px -1px 0px $color, -1px 0px 0px $color,
+    1px 0px 0px $color, -1px 1px 0px $color, 0px 1px 0px $color, 1px 1px 0px $color,
+    1.5px -1px 0px $color, 1.5px -0.5px 0px $color, 1.5px 0px 0px $color, 1.5px 0.5px 0px $color,
+    1.5px 1px 0px $color, 1.5px 1.5px 0px $color, 1.5px 2px 0px $color, 1px 2px 0px $color,
+    0px 2px 0px $color, -1px 2px 0px $color, -1.5px 2px 0px $color, -1.5px 1.5px 0px $color,
+    -1.5px 1px 0px $color, -1.5px 0.5px 0px $color, -1.5px 0px 0px $color, -1.5px -1px 0px $color;
+}
+
+@mixin text-shadow-medium ($color) {
+  text-shadow: -1px -1px 0px $color, 0px -1px 0px $color, 1px -1px 0px $color, -1px 0px 0px $color,
+    2px 0px 0px $color, -2px 2px 0px $color, 0px 2px 0px $color, 2px 2px 0px $color,
+    2.5px -2px 0px $color, 2.5px -0.5px 0px $color, 2.5px 0px 0px $color, 2.5px 0.5px 0px $color,
+    2.5px 2px 0px $color, 2.5px 2.5px 0px $color, 2.5px 2px 0px $color, 2px 2px 0px $color,
+    0px 2px 0px $color, -2px 2px 0px $color, -2.5px 2px 0px $color, -2.5px 2.5px 0px $color,
+    -2.5px 2px 0px $color, -2.5px 0.5px 0px $color, -2.5px 0px 0px $color, -2.5px -2px 0px $color;
+}
+
+@mixin text-shadow-bold ($color) {
+  text-shadow: -2px -1px 0px $color, 0px -1px 0px $color, 1px -1px 0px $color, -1px 0px 0px $color,
+        1px 0px 0px $color, -1px 1px 0px $color, 0px 1px 0px $color, 1px 1px 0px $color,
+        3px 0px 0px $color, 3px 1px 0px $color, 3px 4px 0px $color, 2px -1px 0px $color,
+        2px 0px 0px $color, 2px 1px 0px $color, 2px 4px 0px $color, 1px 4px 0px $color,
+        0px 4px 0px $color, -1px 4px 0px $color, -2px 2px 0px $color, -2px 1px 0px $color,
+        -2px 0px 0px $color, -2px -1px 0px $color;
+}

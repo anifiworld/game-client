@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'LuckiestGuy';
+  src: url('./assets/font/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/font/OpenSans-Regular.ttf') format('truetype');
+}
+
+html {
+  position: relative;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'LuckiestGuy', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000000;
+}
+
+// * {
+//   font-family: 'LuckiestGuy', sans-serif;
+// }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  text-transform: unset !important;
+}
+
+@media (orientation: portrait) {
+}
+
+header {
+  box-shadow: none !important;
+  background: url('./assets/image/ui/08fae0d8a2a4121cb2cc3a25e2fac5cd.png')
+    no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 64px);
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 1200px) and (orientation: portrait) {
+  body {
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    background-size: 100% auto;
+    position: absolute;
+    top: -100vw;
+    left: 0;
+    height: 100vw;
+    width: 103vh;
+    overflow: auto;
+  }
+
+  .container {
+    height: 100vw;
+  }
+}
+
+.MuiCard-root {
+  background-color: transparent !important;
+}
+
+.Toastify {
+  font-family: OpenSans !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

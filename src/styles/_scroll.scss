@@ -1,0 +1,10 @@
+.scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 30px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}

@@ -1,0 +1,72 @@
+.menu {
+  @include text-shadow($border-sub-secondary);
+  font-size: 1rem;
+
+  &:hover {
+    transition: transform 100ms linear;
+    transform: translateY(-2px);
+  }
+}
+
+.brown-block {
+  color: $text-secondary;
+  user-select: none;
+  // background: url('../assets/image/ui/22423d6a5acde123dbb0d27fb81402f6.png') no-repeat;
+  background: url('../assets/svg/ui/nav-label-bg.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.purple-block {
+  @include text-shadow($border-sub-secondary);
+  color: white;
+  user-select: none;
+  background: url('../assets/image/ui/fefa2dae50bd60a32e54d74da2943894.png')
+    no-repeat;
+  // background: url('../assets/svg/ui/button-purple.svg') no-repeat;
+  background-position: center center;
+}
+
+.left-side-box {
+  @include spin;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-45%);
+  animation: spin 10s linear infinite;
+
+  // @media (min-width: 280px) and (max-width: 1279px){
+  //   top: 43%;
+  //   left: 11px;
+  // }
+}
+
+.plus-btn {
+  cursor: pointer;
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-47%);
+
+  &:hover {
+    transform: translateY(-44%) scale(1.05);
+    transition: transform 100ms linear;
+  }
+
+  &:active {
+    transform: translateY(-42%);
+    transition: transform 100ms linear;
+  }
+}
+
+.navbar-logo {
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4%) scale(1.05);
+    transition: transform 100ms linear;
+  }
+
+  &:active {
+    transform: translateY(-4%);
+    transition: transform 100ms linear;
+  }
+}

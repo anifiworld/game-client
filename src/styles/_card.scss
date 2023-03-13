@@ -1,0 +1,173 @@
+.card {
+  @include zoom;
+  color: $text-secondary;
+  width: fit-content;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card.svg') no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  animation-name: zoom;
+  animation-duration: 2s;
+}
+
+.card-starter {
+  color: $text-secondary;
+  width: fit-content;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-starter.svg') no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.card-hero {
+  width: fit-content;
+  color: $text-secondary;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-hero.svg') no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.card-view-hero {
+  width: fit-content;
+  color: $text-secondary;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-viewhero.svg') no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.card-stage-selection {
+  width: fit-content;
+  color: $text-secondary;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-stage-selection.svg') no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.card-select-world {
+  width: fit-content;
+  color: $text-secondary;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-select-world.png') no-repeat;
+  background-position: center;
+  background-size: 65% auto;
+}
+
+.card-team {
+  @include zoom;
+  color: $text-secondary;
+  width: fit-content;
+  position: contain;
+  user-select: none;
+  // background: url('../assets/image/ui/setTeam-card.png') no-repeat;
+  background: url('../assets/image/ui/card-setteam.svg') no-repeat;
+  background-position: center;
+  animation-name: zoom;
+  animation-duration: 2s;
+}
+
+.card-welcome {
+  @include zoom;
+  color: $text-secondary;
+  width: fit-content;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card.svg') no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  animation-name: zoom;
+  animation-duration: 2s;
+}
+
+.card-private-sale {
+  width: fit-content;
+  color: $text-secondary;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-private-sale.svg') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.card-select-gems {
+  width: 100%;
+  height: 100%;
+  color: $text-secondary;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-select-gems.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.card-confirm-equipments {
+  width: 100%;
+  height: 100%;
+  color: $text-secondary;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-confirm-equipment.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.card-setting {
+  width: 100%;
+  height: 100%;
+  color: $text-secondary;
+  position: absolute;
+  user-select: none;
+  background: url('../assets/image/ui/card-setting.png') no-repeat;
+  background-position: center;
+  background-size: 80% auto;
+}
+
+.icon {
+  @include zoom;
+  @include float;
+  z-index: 1;
+  margin-bottom: -80px;
+  animation: zoom 2s, 4s float 2s infinite;
+
+  @media (min-width: 280px) and (max-width: 1279px) {
+    margin-bottom: -50px !important;
+  }
+}
+
+.logo {
+  @include zoom;
+  z-index: 2;
+  margin-bottom: -75px;
+  animation-name: zoom;
+  animation-duration: 2s;
+
+  @media (min-width: 280px) and (max-width: 1279px) {
+    margin-bottom: -43px !important;
+  }
+}
+
+.MuiDialog-paper {
+  background: url('../assets/image/ui/cc154de4ac07fee5fd115cbf2aaae8e3.png')
+    no-repeat;
+  background-color: transparent !important;
+  background-position: center;
+  background-size: contain;
+  box-shadow: none !important;
+  @media (min-width: 0) and (max-width: 960px) {
+    max-width: 530px !important;
+  }
+  @media (min-width: 600px) {
+    max-width: 7100px !important;
+  }
+  @media (min-width: 0) and (max-width: 960px) {
+    height: 440px !important;
+  }
+}

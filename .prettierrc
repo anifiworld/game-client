@@ -1,0 +1,31 @@
+{
+  "trailingComma": "all",
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "printWidth": 80,
+  "importOrder": [
+    "^web3$",
+    "^@web3-react/(.*)$",
+    "^@binance-chain/(.*)$",
+    "^@material-ui/(.*)$",
+    "^@core/(.*)$",
+    "^@server/(.*)$",
+    "^@ui/(.*)$",
+    "^hooks/(.*)$",
+    "^types/(.*)$",
+    "^utils/(.*)$",
+    "^contexts/(.*)$",
+    "^state/(.*)$",
+    "^config$",
+    "^config/(.*)$",
+    "^components/(.*)$",
+    "^layouts/(.*)$",
+    "^views/(.*)$",
+    "^theme/(.*)$",
+    "^translations/(.*)$",
+    "^assets/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": false
+}

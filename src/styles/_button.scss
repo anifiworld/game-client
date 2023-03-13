@@ -1,0 +1,246 @@
+.btn {
+  @include shake;
+  display: flex;
+  align-items: center;
+  color: $text-primary;
+  background-size: contain !important;
+  background-position: center !important;
+  animation: 5s shake 1s infinite;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 100ms linear;
+  }
+
+  &:active {
+    transform: translateY(5px);
+    transition: transform 100ms linear;
+  }
+
+  &.disabled {
+    @include text-shadow(rgba(0, 0, 0, 1), medium);
+    color: rgba(255, 255, 255, 0.692);
+    background: url('../assets/image/ui/fb6c8064874aeed98bade7b38905f8ec.png')
+      no-repeat;
+  }
+
+  &.primary {
+    @include text-shadow($border-primary, medium);
+    background: url('../assets/image/ui/d9711ff1158b940b1d418f9897daad7c.png')
+      no-repeat;
+
+    &-sm {
+      @include text-shadow($border-primary, bold);
+      background: url('../assets/image/ui/button-sm.png') no-repeat;
+    }
+  }
+
+  &.secondary {
+    @include text-shadow($border-secondary, medium);
+    background: url('../assets/image/ui/9ba941a6797a73fa08f0c29b1572c1ed.png')
+      no-repeat;
+
+    &-sm {
+      @include text-shadow($border-secondary, bold);
+      background: url('../assets/image/ui/secondary-sm-btn.png') no-repeat;
+    }
+  }
+
+  &.set-team {
+    @include text-shadow($border-secondary, bold);
+    background: url('../assets/image/ui/set-team-btn.png') no-repeat;
+  }
+
+  @media (min-width: 280px) and (max-width: 1279px) {
+    &.primary {
+      @include text-shadow($border-primary, small);
+      font-size: 1rem !important;
+    }
+
+    &.secondary {
+      @include text-shadow($border-secondary, small);
+      font-size: 1rem !important;
+    }
+  }
+}
+
+.btn-shop {
+  @include shake;
+  @include zoom;
+  @include text-shadow($border-sub-secondary);
+
+  // width: 276px;
+  // height: 70px;
+  color: $text-primary;
+  background: url('../assets/image/ui/3847df5f256b5076bc8ee7a9aba06702.png')
+    no-repeat;
+  background-size: 100% auto;
+  animation: zoom 2s, 1s infinite;
+
+  &:hover {
+    transition: transform 100ms linear;
+    transform: translateY(-15%);
+  }
+
+  &:active {
+    transform: translateY(5px);
+    transition: transform 100ms linear;
+  }
+
+  @media (min-width: 280px) and (max-width: 1279px) {
+    @include text-shadow($border-primary, small);
+    font-size: 1rem !important;
+  }
+}
+
+.btn-selected {
+  transition: transform 100ms linear;
+  transform: translateY(-15%);
+}
+
+.btn-home {
+  transform: translateY(-47%);
+
+  &:hover {
+    transform: translateY(-44%) scale(1.05);
+    transition: transform 100ms linear;
+  }
+}
+
+.report-button {
+  @include text-shadow($border-sub-secondary);
+  color: $text-primary;
+  background: url('../assets/image/ui/be67a9b65baea4c1890cf68afffde36b.png')
+    no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  transform: translateY(-47%);
+
+  &:hover {
+    transform: translateY(-44%) scale(1.05);
+    transition: transform 100ms linear;
+  }
+}
+
+.btn-arrow-left {
+  background: url('../assets/image/ui/13e3941ce15a5f861a3dfbba73574c8f.png')
+    no-repeat center center;
+  cursor: pointer;
+  background-size: contain;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 100ms linear;
+  }
+
+  &:active {
+    transform: translateY(5px);
+    transition: transform 100ms linear;
+  }
+}
+
+.btn-arrow-right {
+  background: url('../assets/image/ui/arrow-right.svg') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  // -webkit-transform: scaleX(-1);
+  // transform: scaleX(-1);
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 100ms linear;
+  }
+
+  &:active {
+    transform: translateY(5px);
+    transition: transform 100ms linear;
+  }
+}
+
+.btn-close-dialog {
+  background: url('../assets/image/ui/5b9022256d7597b9f3df6c5fdf00f710.png')
+    no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media (min-width: 0) and (max-width: 960px) {
+    width: 48px !important;
+  }
+  @media (min-width: 600) {
+    width: 64px !important;
+  }
+  @media (min-width: 0) and (max-width: 960px) {
+    height: 48px !important;
+  }
+  @media (min-width: 600) {
+    height: 64px !important;
+  }
+  height: 64px !important;
+}
+
+.btn-confirm {
+  @include text-shadow($border-sub-secondary);
+
+  color: $text-primary;
+  background: url('../assets/image/ui/confirm-equipment-btn.png') no-repeat;
+  background-size: contain !important;
+  background-position: center !important;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 100ms linear;
+    background-color: transparent !important;
+  }
+
+  &:active {
+    transform: translateY(5px);
+    transition: transform 100ms linear;
+    background-color: transparent !important;
+  }
+}
+
+.btn-game-primary {
+  color: $text-primary;
+  background-size: contain;
+  background: url('../assets/image/ui/green-game-button.png') no-repeat;
+}
+
+.btn-staking-status {
+  @include text-shadow($border-primary);
+  color: $text-primary;
+  background-size: contain !important;
+  background: url('../assets/image/ui/mini-green-button 1.png') no-repeat;
+}
+
+.btn-staking-max {
+  @include text-shadow($border-primary);
+  color: $text-primary;
+  background-size: contain !important;
+  background: url('../assets/image/ui/small-green-button 1.png') no-repeat;
+}
+
+.btn-game-secondary {
+  color: $text-primary;
+  background-size: contain;
+  background: url('../assets/image/ui/purple-game-button.png') no-repeat;
+}
+
+.btn-private-sale {
+  @include text-shadow($border-sub-secondary, medium);
+
+  color: $text-primary;
+  background: url('../assets/image/ui/button-private-sale.png') no-repeat;
+  background-size: contain !important;
+  background-position: center !important;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 100ms linear;
+    background-color: transparent !important;
+  }
+
+  &:active {
+    transform: translateY(5px);
+    transition: transform 100ms linear;
+    background-color: transparent !important;
+  }
+}

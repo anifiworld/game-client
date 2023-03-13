@@ -1,0 +1,80 @@
+
+/* zoom */
+@mixin zoom {
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+/* spin left & right */
+@mixin spin {
+  @keyframes spin {
+    0% {
+      transform: translateY(-45%)rotate(0); 
+    }
+    2% {
+      transform: translateY(-45%)rotate(-15deg); 
+    }
+    4% {
+      transform: translateY(-45%)rotate(15deg);
+    }
+    8% {
+      transform: translateY(-45%)rotate(0);
+    }
+  }
+}
+
+/* float up & down */
+@mixin float {
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+/* shake */
+@mixin shake {
+  @keyframes shake {
+    0% {
+      transform: rotate(0); 
+    }
+    1% {
+      transform: rotate(-4deg); 
+    }
+    2% {
+      transform: rotate(4deg);
+    }
+    3% {
+      transform: rotate(0);
+    }
+  }
+}
+
+/* wave */
+@mixin wave {
+  @keyframes wave {
+    50% {
+      transform: scaleY(-1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+}
+
+/* zoom on hover */
+.zoom:hover {
+  transform: scale(1.05);
+}

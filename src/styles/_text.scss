@@ -1,0 +1,18 @@
+
+.text-white {
+  color: $text-primary !important;
+}
+
+.border-sub-secondary {
+  &-sm {
+    @include text-shadow($border-sub-secondary, small);
+  }
+
+  &-md {
+    @include text-shadow($border-sub-secondary, medium);
+  }
+
+  &-lg {
+    @include text-shadow($border-sub-secondary, bold);
+  }
+}

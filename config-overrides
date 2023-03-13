@@ -1,0 +1,3 @@
+const { useBabelRc, override } = require("customize-cra");
+const rewireYAML = require('react-app-rewire-yaml');
+module.exports = override(useBabelRc(),rewireYAML);
